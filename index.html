@@ -1,179 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zona Turbo - Automotriz del Valle</title>
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3774/3774278.png" type="image/png">
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona Turbo | Taller automotriz</title>
+  <meta name="description" content="Zona Turbo, taller automotriz especializado en motor, frenos, suspensión y transmisión en Tulcán.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-
-<header class="navbar">
-
-  <h2 class="navbar-logo">🔧 Automotriz del Valle</h2>
-
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#agendar">Agendar</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero" id="inicio">
-
-  <div class="hero-overlay">
-    <h1>Servicio Automotriz Profesional</h1>
-    <p>Especialistas en transmisión, frenos y motor</p>
-    <a href="#agendar"><button class="btn-primary">Agendar Cita</button></a>
-  </div>
-
-</section>
-
-<!-- SERVICIOS -->
-
-<section class="servicios" id="servicios">
-
-  <h2>Nuestros Servicios</h2>
-  <p class="seccion-subtitulo">Atención profesional para tu vehículo</p>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537" alt="Transmisión">
-      <h3>Transmisión</h3>
-      <p>Reparación y mantenimiento de caja automática y mecánica.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Zona Turbo</a>
+      <nav class="main-nav" aria-label="Principal">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="agendar.html">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e" alt="Frenos">
-      <h3>Frenos</h3>
-      <p>Cambio de pastillas, discos y revisión del sistema de frenos.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Taller automotriz profesional</span>
+          <h1>Potencia, confianza y cuidado para tu vehículo</h1>
+          <p>Atendemos mantenimiento preventivo y correctivo con enfoque en motor, frenos, suspensión y transmisión para que conduzcas con seguridad.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="agendar.html">Agendar cita</a>
+            <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-panel card glass">
+          <h2>Atención multimarcas</h2>
+          <ul>
+            <li>Diagnóstico técnico inicial.</li>
+            <li>Revisión clara antes de reparar.</li>
+            <li>Seguimiento por llamada o WhatsApp.</li>
+            <li>Horario cómodo de lunes a sábado.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Servicios destacados</span>
+          <h2>Soluciones para los sistemas más importantes del auto</h2>
+        </div>
+        <div class="card-grid cols-4">
+          <article class="card service-card">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Servicio de transmisión automotriz">
+            <h3>Transmisión</h3>
+            <p>Revisión de cambios, fuerza y funcionamiento de cajas manuales y automáticas.</p>
+          </article>
+          <article class="card service-card">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Sistema de frenos automotriz">
+            <h3>Frenos</h3>
+            <p>Inspección de discos, pastillas y respuesta para mejorar seguridad y control.</p>
+          </article>
+          <article class="card service-card">
+            <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=900&q=80" alt="Sistema de suspensión automotriz">
+            <h3>Suspensión</h3>
+            <p>Chequeo de estabilidad, comodidad y desgaste en componentes clave.</p>
+          </article>
+          <article class="card service-card">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Mantenimiento de motor">
+            <h3>Motor</h3>
+            <p>Mantenimiento y diagnóstico para mejorar rendimiento y prevenir fallas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Por qué elegirnos</span>
+          <h2>Un taller más fácil de contactar y entender</h2>
+        </div>
+        <div class="card-grid cols-3">
+          <article class="card feature-card">
+            <h3>Diagnóstico claro</h3>
+            <p>Explicamos el problema y orientamos la mejor solución antes de intervenir tu vehículo.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Agendamiento rápido</h3>
+            <p>Desde la web puedes revisar servicios, reservar y encontrar toda la información del taller.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Atención directa</h3>
+            <p>Conecta el sitio con llamada, correo y WhatsApp para facilitar el contacto real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Zona Turbo</h3>
+        <p>Taller automotriz con presencia web moderna y navegación completa.</p>
+      </div>
+      <div>
+        <h4>Menú</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="agendar.html">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Lunes a viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábado: 10:00 AM - 4:00 PM</p>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2" alt="Suspensión">
-      <h3>Suspensión</h3>
-      <p>Amortiguadores, rótulas y alineación profesional.</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04" alt="Motor">
-      <h3>Motor</h3>
-      <p>Diagnóstico computarizado y reparación de motor.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- BENEFICIOS -->
-
-<section class="beneficios">
-
-  <h2>¿Por qué elegirnos?</h2>
-
-  <div class="beneficios-grid">
-
-    <div class="beneficio-card">
-      <span class="icono">🔧</span>
-      <h3>Técnicos expertos</h3>
-      <p>Mecánicos certificados con más de 10 años de experiencia.</p>
-    </div>
-
-    <div class="beneficio-card">
-      <span class="icono">💻</span>
-      <h3>Diagnóstico computarizado</h3>
-      <p>Equipos modernos para detección precisa de fallas.</p>
-    </div>
-
-    <div class="beneficio-card">
-      <span class="icono">✅</span>
-      <h3>Garantía en reparaciones</h3>
-      <p>Respaldamos cada trabajo con garantía escrita.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- TESTIMONIOS -->
-
-<section class="testimonios">
-
-  <h2>Lo que dicen nuestros clientes</h2>
-
-  <div class="testimonios-grid">
-
-    <div class="testimonio-card">
-      <p>"Excelente servicio, repararon mi caja de cambios en tiempo récord. 100% recomendados."</p>
-      <strong>— Carlos M.</strong>
-    </div>
-
-    <div class="testimonio-card">
-      <p>"Técnicos muy profesionales y honestos. Me explicaron todo antes de proceder."</p>
-      <strong>— Ana L.</strong>
-    </div>
-
-    <div class="testimonio-card">
-      <p>"El diagnóstico computarizado detectó el problema que otro taller no encontró."</p>
-      <strong>— Roberto V.</strong>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- MARCAS -->
-
-<section class="marcas">
-
-  <h2>Taller Multimarcas</h2>
-  <div class="marcas-lista">
-    <span>Chevrolet</span>
-    <span>Hyundai</span>
-    <span>Kia</span>
-    <span>Nissan</span>
-    <span>Toyota</span>
-    <span>Mazda</span>
-  </div>
-
-</section>
-
-<!-- AGENDAR -->
-
-<section class="agendar" id="agendar">
-
-  <h2>Agenda tu cita</h2>
-  <p>Llámanos o escríbenos y te atendemos de inmediato</p>
-
-  <div class="contacto-btns">
-    <a href="tel:+593000000000" class="btn-primary">📞 Llamar ahora</a>
-    <a href="https://wa.me/593000000000" target="_blank" class="btn-whatsapp">💬 WhatsApp</a>
-  </div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer id="contacto">
-
-  <p>© 2026 Automotriz del Valle | Zona Turbo</p>
-  <p style="font-size:13px; color:#94a3b8;">Lunes a Sábado · 8:00 AM – 6:00 PM</p>
-
-</footer>
-
-<!-- BOTÓN FLOTANTE WHATSAPP -->
-<a href="https://wa.me/593000000000" target="_blank" class="whatsapp-float">💬</a>
-
+  </footer>
 </body>
 </html>

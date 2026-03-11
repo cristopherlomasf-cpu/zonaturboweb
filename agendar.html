@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar | Zona Turbo</title>
+  <meta name="description" content="Agenda tu cita de mantenimiento o revisión en Zona Turbo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Zona Turbo</a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a class="active" href="agendar.html">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-top">
+      <div class="container narrow">
+        <span class="eyebrow">Reserva tu cita</span>
+        <h1>Agenda tu atención en pocos pasos</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <form class="booking-form card">
+          <div class="form-grid two-col">
+            <label>
+              <span>Seleccionar servicio</span>
+              <select>
+                <option>Mantenimiento preventivo</option>
+                <option>Revisión de frenos</option>
+                <option>Revisión de suspensión</option>
+                <option>Diagnóstico de motor</option>
+                <option>Revisión de transmisión</option>
+              </select>
+            </label>
+            <label>
+              <span>Seleccionar fecha</span>
+              <input type="date">
+            </label>
+          </div>
+
+          <div class="form-grid two-col">
+            <label>
+              <span>Seleccionar hora</span>
+              <input type="time">
+            </label>
+            <label>
+              <span>Nombre cliente</span>
+              <input type="text" placeholder="Nombre del cliente">
+            </label>
+          </div>
+
+          <div class="form-grid two-col">
+            <label>
+              <span>Número celular</span>
+              <input type="tel" placeholder="0962074110">
+            </label>
+            <label>
+              <span>Información vehículo</span>
+              <input type="text" placeholder="Placa o modelo del vehículo">
+            </label>
+          </div>
+
+          <label>
+            <span>Descripción del mantenimiento</span>
+            <textarea rows="6" placeholder="Describe el problema, ruido o revisión que necesitas"></textarea>
+          </label>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="submit">Confirmar agendamiento</button>
+            <a class="btn btn-secondary" href="contacto.html">Ver contacto</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Zona Turbo</h3>
+        <p>Una página pensada para que el cliente reserve fácil y rápido.</p>
+      </div>
+      <div>
+        <h4>Menú</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="agendar.html">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Lunes a viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábado: 10:00 AM - 4:00 PM</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
