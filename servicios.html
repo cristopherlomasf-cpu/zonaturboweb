@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Zona Turbo</title>
-  <meta name="description" content="Servicios de transmisión, frenos, suspensión y motor en Zona Turbo.">
+  <meta name="description" content="Servicios de transmisión, frenos, suspensión y motor en Zona Turbo, Tulcán. Agenda tu revisión en línea.">
+  <meta name="keywords" content="servicios automotrices Tulcán, frenos, suspensión, motor, transmisión">
+  <meta property="og:title" content="Servicios | Zona Turbo">
+  <meta property="og:description" content="Transmisión, frenos, suspensión y motor en Tulcán. Agenda tu cita.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,15 +31,15 @@
   <main>
     <section class="page-top">
       <div class="container">
-        <span class="eyebrow">Nuestros servicios</span>
-        <h1>Atención técnica para cada sistema importante del vehículo</h1>
+        <span class="eyebrow fade-up">Nuestros servicios</span>
+        <h1 class="fade-up" style="animation-delay:0.1s">Atención técnica para cada sistema importante del vehículo</h1>
       </div>
     </section>
 
     <section class="section">
       <div class="container stack-lg">
-        <article class="service-row card">
-          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Servicio de transmisión">
+        <article class="service-row card fade-up">
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Servicio de transmisión" loading="lazy">
           <div>
             <h2>Transmisión</h2>
             <p>Realizamos revisión, mantenimiento y diagnóstico de transmisión manual y automática para detectar desgaste, pérdida de fuerza o cambios irregulares.</p>
@@ -47,8 +52,8 @@
           </div>
         </article>
 
-        <article class="service-row card reverse-row">
-          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Servicio de frenos">
+        <article class="service-row card reverse-row fade-up">
+          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Servicio de frenos" loading="lazy">
           <div>
             <h2>Frenos</h2>
             <p>Inspeccionamos el sistema de frenos completo para mantener una respuesta rápida, estable y segura durante la conducción.</p>
@@ -61,8 +66,8 @@
           </div>
         </article>
 
-        <article class="service-row card">
-          <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=900&q=80" alt="Servicio de suspensión">
+        <article class="service-row card fade-up">
+          <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=900&q=80" alt="Servicio de suspensión" loading="lazy">
           <div>
             <h2>Suspensión</h2>
             <p>Evaluamos los componentes que influyen en estabilidad, comodidad y control para reducir desgaste y mejorar la experiencia de manejo.</p>
@@ -75,8 +80,8 @@
           </div>
         </article>
 
-        <article class="service-row card reverse-row">
-          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Servicio de motor">
+        <article class="service-row card reverse-row fade-up">
+          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Servicio de motor" loading="lazy">
           <div>
             <h2>Motor</h2>
             <p>Atendemos revisión de motor, mantenimiento preventivo y diagnóstico de fallas mecánicas para conservar rendimiento y confiabilidad.</p>
@@ -112,5 +117,19 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 300));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>

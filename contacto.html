@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | Zona Turbo</title>
-  <meta name="description" content="Dirección, horario y contacto de Zona Turbo en Tulcán.">
+  <meta name="description" content="Dirección, horario y contacto de Zona Turbo en Tulcán, Carchi. WhatsApp y correo disponibles.">
+  <meta name="keywords" content="contacto taller Tulcán, WhatsApp mecánica Tulcán, Zona Turbo dirección">
+  <meta property="og:title" content="Contacto | Zona Turbo">
+  <meta property="og:description" content="Encuentra el taller Zona Turbo en Tulcán. Horario, dirección y WhatsApp directo.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,14 +31,14 @@
   <main>
     <section class="page-top">
       <div class="container">
-        <span class="eyebrow">Información de contacto</span>
-        <h1>Encuentra el taller y comunícate fácilmente</h1>
+        <span class="eyebrow fade-up">Información de contacto</span>
+        <h1 class="fade-up" style="animation-delay:0.1s">Encuentra el taller y comunícate fácilmente</h1>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <article class="card contact-card">
+        <article class="card contact-card fade-up">
           <h2>Datos del taller</h2>
           <div class="info-block"><strong>Dirección</strong><p>Av. Rafael Arellano y Bolívar, Tulcán, Carchi</p></div>
           <div class="info-block"><strong>Número celular</strong><p><a href="tel:+593962074110">0962074110</a></p></div>
@@ -41,7 +46,7 @@
           <div class="info-block"><strong>Redes</strong><p>@mecanicadelvalle</p></div>
         </article>
 
-        <article class="card contact-card">
+        <article class="card contact-card fade-up" style="animation-delay:0.1s">
           <h2>Horario de atención</h2>
           <p>Lunes a viernes: 8:00 AM - 6:00 PM</p>
           <p>Sábado: 10:00 AM - 4:00 PM</p>
@@ -56,11 +61,11 @@
 
     <section class="section section-dark">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head fade-up">
           <span class="eyebrow">Ubicación</span>
           <h2>Mapa del taller</h2>
         </div>
-        <div class="map-box card">
+        <div class="map-box card fade-up">
           <iframe title="Mapa Zona Turbo" src="https://www.google.com/maps?q=Av.%20Rafael%20Arellano%20y%20Bolivar,%20Tulcan,%20Carchi&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -87,5 +92,19 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 300));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>

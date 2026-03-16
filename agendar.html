@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agendar | Zona Turbo</title>
-  <meta name="description" content="Agenda tu cita de mantenimiento o revisión en Zona Turbo.">
+  <meta name="description" content="Agenda tu cita de mantenimiento o revisión en Zona Turbo, Tulcán. Rápido y desde la web.">
+  <meta name="keywords" content="agendar cita taller Tulcán, reservar mantenimiento automotriz">
+  <meta property="og:title" content="Agendar cita | Zona Turbo">
+  <meta property="og:description" content="Reserva tu cita de mantenimiento en Zona Turbo en pocos pasos.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,18 +31,19 @@
   <main>
     <section class="page-top">
       <div class="container narrow">
-        <span class="eyebrow">Reserva tu cita</span>
-        <h1>Agenda tu atención en pocos pasos</h1>
+        <span class="eyebrow fade-up">Reserva tu cita</span>
+        <h1 class="fade-up" style="animation-delay:0.1s">Agenda tu atención en pocos pasos</h1>
       </div>
     </section>
 
     <section class="section">
       <div class="container narrow">
-        <form class="booking-form card">
+        <form class="booking-form card fade-up" action="https://formspree.io/f/xkgjnqpw" method="POST">
           <div class="form-grid two-col">
             <label>
               <span>Seleccionar servicio</span>
-              <select>
+              <select name="servicio" required>
+                <option value="">-- Selecciona un servicio --</option>
                 <option>Mantenimiento preventivo</option>
                 <option>Revisión de frenos</option>
                 <option>Revisión de suspensión</option>
@@ -47,35 +53,35 @@
             </label>
             <label>
               <span>Seleccionar fecha</span>
-              <input type="date">
+              <input type="date" name="fecha" required>
             </label>
           </div>
 
           <div class="form-grid two-col">
             <label>
               <span>Seleccionar hora</span>
-              <input type="time">
+              <input type="time" name="hora" required>
             </label>
             <label>
               <span>Nombre cliente</span>
-              <input type="text" placeholder="Nombre del cliente">
+              <input type="text" name="nombre" placeholder="Nombre del cliente" required>
             </label>
           </div>
 
           <div class="form-grid two-col">
             <label>
               <span>Número celular</span>
-              <input type="tel" placeholder="0962074110">
+              <input type="tel" name="celular" placeholder="0962074110" required>
             </label>
             <label>
               <span>Información vehículo</span>
-              <input type="text" placeholder="Placa o modelo del vehículo">
+              <input type="text" name="vehiculo" placeholder="Placa o modelo del vehículo" required>
             </label>
           </div>
 
           <label>
             <span>Descripción del mantenimiento</span>
-            <textarea rows="6" placeholder="Describe el problema, ruido o revisión que necesitas"></textarea>
+            <textarea name="descripcion" rows="6" placeholder="Describe el problema, ruido o revisión que necesitas"></textarea>
           </label>
 
           <div class="hero-actions">
@@ -107,5 +113,19 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 300));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>
