@@ -36,56 +36,6 @@
   </header>
 
   <main>
-    <!-- Carrusel de imágenes -->
-    <section class="carousel-section" aria-label="Galería del taller">
-      <div class="carousel" id="carousel">
-        <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=1400&q=80" alt="Mantenimiento de motor en Zona Turbo">
-            <div class="carousel-caption">
-              <span class="eyebrow">Motor</span>
-              <h2>Diagnóstico y mantenimiento profesional</h2>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1400&q=80" alt="Sistema de frenos automotriz">
-            <div class="carousel-caption">
-              <span class="eyebrow">Frenos</span>
-              <h2>Seguridad total en cada frenada</h2>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=1400&q=80" alt="Suspensión automotriz">
-            <div class="carousel-caption">
-              <span class="eyebrow">Suspensión</span>
-              <h2>Estabilidad y confort en la ruta</h2>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1400&q=80" alt="Transmisión automotriz">
-            <div class="carousel-caption">
-              <span class="eyebrow">Transmisión</span>
-              <h2>Potencia y rendimiento garantizados</h2>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" alt="Taller automotriz Zona Turbo">
-            <div class="carousel-caption">
-              <span class="eyebrow">Zona Turbo</span>
-              <h2>Tu taller de confianza en Tulcán</h2>
-            </div>
-          </div>
-        </div>
-
-        <!-- Controles -->
-        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Imagen anterior">&#8249;</button>
-        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Imagen siguiente">&#8250;</button>
-
-        <!-- Indicadores -->
-        <div class="carousel-dots" id="carouselDots"></div>
-      </div>
-    </section>
-
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy fade-up">
@@ -109,6 +59,43 @@
       </div>
     </section>
 
+    <!-- Carrusel de imágenes -->
+    <section class="section carousel-section fade-up">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Galería</span>
+          <h2>Nuestro taller en imágenes</h2>
+        </div>
+        <div class="carousel" id="carousel" aria-label="Galería del taller">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=1200&q=80" alt="Mantenimiento de motor" loading="lazy">
+              <div class="carousel-caption"><span class="eyebrow">Motor</span><p>Diagnóstico y mantenimiento profesional</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80" alt="Sistema de frenos" loading="lazy">
+              <div class="carousel-caption"><span class="eyebrow">Frenos</span><p>Seguridad total en cada frenada</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=1200&q=80" alt="Suspensión automotriz" loading="lazy">
+              <div class="carousel-caption"><span class="eyebrow">Suspensión</span><p>Estabilidad y confort en la ruta</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80" alt="Transmisión automotriz" loading="lazy">
+              <div class="carousel-caption"><span class="eyebrow">Transmisión</span><p>Potencia y rendimiento garantizados</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Taller Zona Turbo" loading="lazy">
+              <div class="carousel-caption"><span class="eyebrow">Zona Turbo</span><p>Tu taller de confianza en Tulcán</p></div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-head fade-up">
@@ -117,22 +104,22 @@
         </div>
         <div class="card-grid cols-4">
           <article class="card service-card fade-up" style="animation-delay:0.05s">
-            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Servicio de transmisión automotriz" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Transmisión" loading="lazy">
             <h3>Transmisión</h3>
             <p>Revisión de cambios, fuerza y funcionamiento de cajas manuales y automáticas.</p>
           </article>
           <article class="card service-card fade-up" style="animation-delay:0.1s">
-            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Sistema de frenos automotriz" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Frenos" loading="lazy">
             <h3>Frenos</h3>
             <p>Inspección de discos, pastillas y respuesta para mejorar seguridad y control.</p>
           </article>
           <article class="card service-card fade-up" style="animation-delay:0.15s">
-            <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=900&q=80" alt="Sistema de suspensión automotriz" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1606577924006-27d39b132ae2?auto=format&fit=crop&w=900&q=80" alt="Suspensión" loading="lazy">
             <h3>Suspensión</h3>
             <p>Chequeo de estabilidad, comodidad y desgaste en componentes clave.</p>
           </article>
           <article class="card service-card fade-up" style="animation-delay:0.2s">
-            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Mantenimiento de motor" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Motor" loading="lazy">
             <h3>Motor</h3>
             <p>Mantenimiento y diagnóstico para mejorar rendimiento y prevenir fallas.</p>
           </article>
@@ -188,7 +175,6 @@
   <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
 
   <script>
-    // Fade-up observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
@@ -196,7 +182,6 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    // Botón volver arriba
     const btn = document.getElementById('backToTop');
     window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 300));
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
@@ -205,14 +190,12 @@
     const track = document.getElementById('carouselTrack');
     const slides = track.querySelectorAll('.carousel-slide');
     const dotsContainer = document.getElementById('carouselDots');
-    let current = 0;
-    let autoTimer;
+    let current = 0, autoTimer;
 
-    // Crear dots
     slides.forEach((_, i) => {
       const d = document.createElement('button');
       d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-      d.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
+      d.setAttribute('aria-label', 'Imagen ' + (i + 1));
       d.addEventListener('click', () => goTo(i));
       dotsContainer.appendChild(d);
     });
@@ -220,20 +203,15 @@
     function goTo(index) {
       current = (index + slides.length) % slides.length;
       track.style.transform = `translateX(-${current * 100}%)`;
-      dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
-        d.classList.toggle('active', i === current);
-      });
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
     }
 
-    function startAuto() {
-      autoTimer = setInterval(() => goTo(current + 1), 4500);
-    }
+    function startAuto() { autoTimer = setInterval(() => goTo(current + 1), 4500); }
     function stopAuto() { clearInterval(autoTimer); }
 
     document.getElementById('carouselPrev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
     document.getElementById('carouselNext').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
 
-    // Swipe táctil
     let touchStartX = 0;
     track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
     track.addEventListener('touchend', e => {
